@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/ -->
+<html class="js no-touch cssanimations csstransforms csstransforms3d csstransitions fontface wf-proximanova1proximanova2-n3-active wf-proximanova1proximanova2-n4-active wf-proximanova1proximanova2-n6-active wf-active translated-ltr" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/saved_resource"></script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/omniunih_int.js"></script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/beacon.min.js"></script><div class="fit-vids-style"><font><font>­</font></font><style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/eng.js"></script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/plugins.js"></script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/logincookie.js"></script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/jquery.js"></script>
+	<!-- V:Permalink -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<script>
+  	var io_c3sd = io_c3sd || {};
+	var io_c3s = io_c3s || {};
+	io_c3s.queryStrings = [];
+	io_c3s.set = function(k, v) { io_c3s[k] = v };
+	io_c3s.addToArray = function(k, v) { if (v !== null) { this.queryStrings.push(k+v) } };
+	io_c3s.getCookie = function( cName ) {
+		var allCookies = document.cookie.split(';'), tempCookie = '', cookieName = '', cookieValue = null;
+		for ( var i = 0; i < allCookies.length; i++ ) {
+			tempCookie = allCookies[i].split( '=' );
+			cookieName = tempCookie[0].replace(/^\s+|\s+$/g, '');
+			if ( cookieName === cName.replace(/^\s+|\s+$/g, '') ) {
+				if ( tempCookie.length > 1 ) {
+					cookieValue = unescape( tempCookie[1].replace(/^\s+|\s+$/g, '') );
+					cookieValue = cookieValue === '' ? null : cookieValue;
+				}
+			}
+		}
+		return cookieValue;
+	};
+	var io_c3sMN_fallback = '1197769719';
+	io_c3s.writeAd = function(whichAd) {
+	return (typeof io_c3sd['Ad_Tags'] != 'undefined' && typeof io_c3sd['Ad_Tags'][whichAd])? io_c3sd['Ad_Tags'][whichAd]:io_c3sMN_fallback;
+	};
+	var is_ads_responsive = true;
+   	io_c3s.is_bc_active = false;
+	io_c3s.section_key = false;
+	io_c3s.set('host', 'rs.aol.de');
+  	io_c3s.set('version', '1.0');
+	io_c3s.addToArray( "c3s_l=", io_c3s.getCookie('c3s_l') );
+  	io_c3s.addToArray( "oo_global_l=", io_c3s.getCookie('oo_global_l') );
+  	io_c3s.addToArray( "oo_seen_l=", io_c3s.getCookie('oo_seen_l') );
+	
+			io_c3s.section_key = '';
+		
+	
+    io_c3s.set( 'section_key', (!io_c3s.section_key?'engadget':'engadget.'+io_c3s.section_key) );
+	var responsiveC3Skey = io_c3s.section_key;
+
+	(function(d) {
+		var queryStrings = io_c3s.queryStrings.length ? "?" + io_c3s.queryStrings.join("&") : '',
+		    src = d.location.protocol + '//' + io_c3s['host'] + '/';
+		    src += io_c3s['version'] + '/' + (!io_c3s.used_layout?'':io_c3s.used_layout+'.') + io_c3s['section_key'] + '/cobrand.js' + queryStrings;
+		d.write('<script type="text/javascript" id="c3s-init" src="' + src + '"><\/script>');
+	})(document);
+
+</script><script type="text/javascript" id="c3s-init" src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/cobrand.js"></script>		<!-- AOL META -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wow factor: flow simulator in the browser window - Engadget Germany</title>
+    <meta name="description" content="Der Coder George Corney aka haxiomic hat ein kleines, aber sehr feines Chrome Experiment ausget&amp;uuml;ftelt, bei dem die Bewegungsdynamik einer Fl&amp;uuml;ss">
+    
+    <meta property="og:title" content="Mit Wow-Effekt: Strömungssimulator im Browser-Fenster - Engadget Deutschland">
+    <meta property="og:description" content="Der Coder George Corney aka haxiomic hat ein kleines, aber sehr feines Chrome Experiment ausget&amp;uuml;ftelt, bei dem die Bewegungsdynamik einer Fl&amp;uuml;ss">
+    <meta property="og:image" content="http://o.aolcdn.com/hss/storage/midas/c99ca9a6d465c6493a428e0ebc0e1b74/201104880/tumblr_nf6z6ykmpm1t5fphqo5_500.gif">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/">
+    <meta property="og:locale" content="de_DE">
+    
+      <meta property="article:tag" content="Browser">
+    
+      <meta property="article:tag" content="Chrome">
+    
+      <meta property="article:tag" content="Chrome Experiment">
+    
+      <meta property="article:tag" content="George Corney">
+    
+      <meta property="article:tag" content="GPU Fluid Experiment">
+    
+      <meta property="article:tag" content="haxiomic">
+    
+      <meta property="article:tag" content="WebGL Fluid Experiment">
+    
+    <meta property="article:author" content="http://de.engadget.com/editors/anton-waldt/">
+    <meta property="article:publisher" content="https://www.facebook.com/Engadget.German">
+    <meta property="fb:app_id" content="">
+    <meta property="fb:admins" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@de.engadget">
+    <meta name="twitter:url" content="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/">
+    <meta name="twitter:title" content="Mit Wow-Effekt: Strömungssimulator im Browser-Fenster">
+    <meta name="twitter:description" content="Der Coder George Corney aka haxiomic hat ein kleines, aber sehr feines Chrome Experiment ausget&amp;uuml;ftelt, bei dem die Bewegungsdynamik einer Fl&amp;uuml;ss">
+    
+      <meta name="twitter:image" content="http://o.aolcdn.com/hss/storage/midas/c99ca9a6d465c6493a428e0ebc0e1b74/201104880/tumblr_nf6z6ykmpm1t5fphqo5_500.gif">
+    
+    <meta name="twitter:creator" content="@Waldt23"> 
+    <meta name="twitter:app:name:iphone" content="Engadget for iPhone">
+    <meta name="twitter:app:url:iphone" content="com.aol.engadget://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/">
+
+    <meta name="twitter:app:name:ipad" content="Engadget for iPad">
+    <meta name="twitter:app:url:ipad" content="com.aol.appspinner.engadget://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/">
+
+    <meta name="twitter:app:id:googleplay" content="com.aol.mobile.engadget">
+    <meta name="twitter:app:name:googleplay" content="Engadget">
+    <meta name="twitter:app:url:googleplay" content="engadget://wow-effekt-stromungssimulator-im-browser-fenster">
+  
+<meta property="og:site_name" content="Engadget Deutschland">
+
+<meta name="robots" content="noodp,noydir">
+<link rel="canonical" href="./Wow factor  flow simulator in the browser window - Engadget Germany_files/Wow factor  flow simulator in the browser window - Engadget Germany.html">
+<!-- sv=Permalink --> 
+	 
+	 
+	 
+	<!-- M:head-global -->
+	
+        
+	<!-- Fontkit -->
+	<script type="text/javascript" src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/typekit.js"></script>
+	<style type="text/css">body{font-family:"proxima-nova-1","proxima-nova-2","Helvetica","Arial",sans-serif;}</style><link rel="stylesheet" href="http://o.aolcdn.com/os/engadget/k/nyf5lca-d.css"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<!-- Meta -->
+	<script>
+	if ((/iPad/i).test(navigator.userAgent)) {
+	    document.write('<meta name="apple-itunes-app" content="app-id=409892845">');
+	} else {
+	    document.write('<meta name="apple-itunes-app" content="app-id=347839246">');
+	}
+	</script><meta name="apple-itunes-app" content="app-id=347839246">
+
+	
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+	<meta name="robots" content="noodp,noydir">
+	
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="Engadget" href="http://de.engadget.com/rss.xml">
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="http://www.blogsmithmedia.com/de.engadget.com/media/apple-touch-icon-152x152.png">
+	<link rel="icon" type="image/png" href="http://www.blogsmithmedia.com/de.engadget.com/media/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="http://www.blogsmithmedia.com/de.engadget.com/media/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="http://www.blogsmithmedia.com/de.engadget.com/media/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="http://www.blogsmithmedia.com/de.engadget.com/media/favicon-160x160.png" sizes="160x160">
+	<meta name="msapplication-TileColor" content="#3498db">
+	<meta name="msapplication-TileImage" content="//www.blogsmithmedia.com/de.engadget.com/media/mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="//www.blogsmithmedia.com/de.engadget.com/media/mstile-70x70.png">
+	<meta name="msapplication-square150x150logo" content="//www.blogsmithmedia.com/de.engadget.com/media/mstile-150x150.png">
+	<meta name="msapplication-wide310x150logo" content="//www.blogsmithmedia.com/de.engadget.com/media/mstile-310x150.png">
+	<meta name="msapplication-square310x310logo" content="//www.blogsmithmedia.com/de.engadget.com/media/mstile-310x310.png">
+        <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="dns-prefetch" href="http://media.gdgt.com/">
+    <link rel="dns-prefetch" href="http://ajax.googleapis.com/">
+	<!-- CSS -->
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://www.blogsmithmedia.com/de.engadget.com/media/style-ie.css?91155"><![endif]-->
+	<!--[if gt IE 8]><!--><link rel="stylesheet" href="http://www.blogsmithmedia.com/de.engadget.com/media/style.css?91155"><!--<![endif]-->
+	<link rel="stylesheet" href="http://de.engadget.com/media/de_style.css?91155">
+        <link href="http://o.aolcdn.com/os/ads/adhesion/css/adhads.css" rel="stylesheet" type="text/css">
+	<!-- General JS -->
+
+	<script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/core.js"></script>
+	<script>
+	data = {
+		blogUrl: "de.engadget.com",
+		v: 91155
+	};
+
+	_when_ = {
+		jquery: lab.scriptBs("jquery"),
+		login: lab.scriptBs("logincookie"),
+		plugins: lab.scriptBs("plugins"),
+		eng: lab.scriptBs("eng")
+	};
+ 
+        var s265prop9 = ('20995237' !== '') ? 'bsd:20995237' : '';
+        var postID = '20995237';
+        var modalMNo = '2142927130',
+	        modalVideoMNo = '93320648',
+	        modalGalleryMNo = '93304207',
+		btfMN = '93418841';
+        _when_.eng("eng.omni.init", {
+		pfxID:"weg",
+		pageName:document.title,
+		server:"acp-ld39.websys.aol.com",
+		channel:"de.engadget",
+                s_account: "aoldegermanytotal",
+                short_url: "",
+		pageType:"",
+		linkInternalFilters:"javascript:,",
+		prop1:"article",
+		prop2:"",
+		prop9:s265prop9,
+		prop12:document.location,
+		prop17:"",
+		prop18:"",
+		prop19:"",
+		prop20:"",
+                prop22:"anton-waldt",
+                prop54:"blogsmith",
+		prop62:"video_novideo",
+		mmxgo: true
+        });
+	// Legacy
+	when = _when_;
+	</script>
+        
+<!-- Ads JS -->
+	<script>
+	var mobilePlacementID;
+	onBreak({
+		320: function () { 
+			mobilePlacementID = '348-14-15-13c'; 
+		},
+		768: function () { 
+			mobilePlacementID = '348-14-15-13c'; 
+		},
+		980: function () {  
+			mobilePlacementID = '348-14-15-13c';
+		}
+	});
+	</script>
+	<script type="text/javascript" src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/iam.js"></script> 
+<!-- /M -->  
+	 
+	 
+	 
+	 
+<style type="text/css"></style><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/b"><style type="text/css">.aol-share a{  }</style><style type="text/css" id="cookie-banner-css">#usrConsent .clearfix:after { display: table; clear: both; content: ""; } :first-child+html #usrConsent .clearfix { min-height: 0; } *:first-child+html #usrConsent .clearfix { zoom: 1;} #usrConsent{/*position:fixed;bottom:0;z-index:2147483626;*/width: 100%;background-color:#333;margin:0 auto;padding:20px 0;opacity:0.9;text-align:center}#usrConsent p{width:1000px;margin:auto;font:300 13px adelle-sans,helvetica,arial;text-align: left;}#usrConsent a,#usrConsent p span{display:inline-block;font:300 13px adelle-sans,helvetica,arial;line-height:20px;color:#FFF;text-decoration:none}#usrConsent p span{float:left;width:80%;padding:0 40px 0 20px;}#usrConsent a.closeBtn{float:left;padding:7px 25px;margin-top:13px;font-size:14px;text-decoration:none;border:1px solid #FFF}#usrConsent a.closeBtn:hover {background-color: #FFF;color:#333}@media only screen and (max-width:999px) and (min-width:768px){#usrConsent p {width:100%;max-width:768px;text-align:center;}#usrConsent p span {width: auto;}#usrConsent a.closeBtn{float:none;margin-top:14px;}}@media only screen and (max-width:767px){#usrConsent {/*top: 0;bottom: auto;*/}#usrConsent p {width:100%;max-width:320px;text-align:center;}#usrConsent p span {width: auto;padding:0 20px}#usrConsent a.closeBtn{float:none;margin-top:14px;}}@media only screen and (min-width: 480px) and (max-width: 767px){#usrConsent p {max-width:468px;font-size:14px;}#usrConsent p span{padding:0;-webkit-text-size-adjust:none;}}</style><link rel="stylesheet" type="text/css" media="screen" href="./Wow factor  flow simulator in the browser window - Engadget Germany_files/mc.s2c.css"><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Wow factor  flow simulator in the browser window - Engadget Germany_files/translateelement.css"></head>
+<body class="with-rail perm" itemscope="" itemtype="http://schema.org/Article"><div id="ooCont"><div id="usrConsent" class="clearfix"><p class="clearfix"><span><font><font>Cookies allow a variety of features designed to make your visit enjoyable at AOL. </font><font>By place, use this website, you consent to the use of cookies in accordance with our guidelines. </font><font>For more information </font></font><a href="http://datenschutz.aol.de/cookies.html" style="font-weight:bold"><font><font>please click here</font></font></a><font><font> . </font></font></span><a class="closeBtn" href="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/#" onclick="return io_c3s.oo.closeBanner();"><font><font>I agree</font></font></a></p></div></div>
+
+<!-- Page header -->
+<div id="header">
+	 
+	 
+	<!-- M:header-ad-banner -->
+<div class="ad header-ad header-ad-banner">
+	<script>
+	onBreak({
+		980: function () {
+		(function(){			
+			document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || io_c3s.writeAd("Yahoo"))+'&pn=aol&p=aol-eng&c=r&l=N' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');}());
+},
+		768: function() {
+			(function(){
+				
+				document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || io_c3s.writeAd("Yahoo"))+'&pn=aol&p=aol-eng&c=r&l=N' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');
+			}());
+		}
+	});
+	</script><script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&pn=aol&p=aol-eng&c=r&l=N&rand=7438798"></script>
+</div>
+<!-- /M --> 
+	 
+	<!-- M:header-global -->
+<header role="banner">
+    <div id="nav">
+      <div id="nav-flow">
+            <nav class="nav container" id="nav-mini">
+                <header role="banner">
+                
+		      <span id="logo">
+                        <a href="http://de.engadget.com/" class="s-engadget-logo-web-over"><font><font>Engadget </font></font></a>
+                        <span class="edition"><font><font>DE</font></font></span>
+                      </span>
+		  
+                    <div class="menu-link">
+                        <a class="s-icn-menu" href="http://de.engadget.com/"><font><font>
+							Menu
+						</font></font></a>
+                    </div>
+
+                    <a class="item search" href="http://de.engadget.com/#nav-search" style="display: none;">
+                        <i class="s-search-white"></i>
+                    </a>
+                </header>
+            </nav>
+
+            <div class="nav-container-container">
+                <nav class="nav container" id="nav-main">
+                    <span id="logo">
+                        <a href="http://de.engadget.com/" class="s-engadget-logo-web-over"><font><font>Engadget DE </font></font></a>
+                        <span class="edition"><font><font>EN</font></font></span>
+                       
+                    </span>
+                    <ul>
+                        <li class="news">
+                            <a class="item" href="http://de.engadget.com/"><font><font>News</font></font></a>
+                        </li>
+                        <li class="features">
+                            <a class="item " href="http://de.engadget.com/tag/features/"><font><font>Features </font></font></a>
+                        </li>
+                        <li class="reviews">
+                            <a class="item " href="http://de.engadget.com/tag/review/"><font><font>Reviews</font></font></a>
+                        </li>
+                        <li class="galleries">
+                            <a class="item " href="http://de.engadget.com/photos/"><font><font>PICTURES GALLERIES</font></font></a>
+                        </li>
+                        
+                        <li class="more">
+                            <a class="item " href="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/#"><font><font>MORE </font></font><i class="s-icn-arw-gry-down"></i></a>
+                        </li>
+                    </ul>
+                   
+                    
+                    <section id="search-container">
+                        <form action="http://de.engadget.com/search/" class="nav" id="nav-search" method="get">
+                            <div class="query">
+                                <input class="query-input" id="nav-search-input" name="q" placeholder="SUCHE">
+                                <input type="hidden" name="invocationType" value="aolde-engadget">
+				<span onclick="document.getElementById(&#39;nav-search&#39;).submit();" class="query-button"></span>
+                            </div>
+                        </form>
+                    </section>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+
+
+</header>
+
+<ul id="dropdown-more" class="nav-dropdown-items" style="display:none">
+    <li><a href="http://de.engadget.com/rss.xml"><font><font>RSS SUBSCRIBE</font></font></a>
+    </li>
+    <li><a href="http://de.engadget.com/about/tips/"><font><font>SEND US A TIP!</font></font></a>
+    </li>
+</ul>
+
+<div id="mobile-dropdown-container" class="nav-dropdown-items" style="display: none;">
+    <ul>
+        <li><a href="http://de.engadget.com/"><font><font>NEWS</font></font></a>
+        </li>
+        <li>
+            <a href="http://de.engadget.com/tag/review/"><font><font>REVIEWS</font></font></a>         
+	</li>
+        <li><a href="http://de.engadget.com/tag/features/"><font><font>FEATURES</font></font></a>
+        </li>
+        <li>
+            <a href="http://de.engadget.com/photos/"><font><font>PICTURES GALLERIES</font></font></a>
+        </li>
+     
+  
+        <li>
+            <a href="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/#" class="more"><font><font>MORE </font></font><i class="s-icn-arw-gry-down"></i></a>
+            <ul class="inner-dropdown">
+                
+                <li><a href="http://de.engadget.com/rss.xml"><font><font>RSS SUBSCRIBE</font></font></a>
+                </li>
+                <li><a href="http://de.engadget.com/about/tips/"><font><font>SEND US A TIP!</font></font></a>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
+</div>
+<script>
+    _when_.eng("eng.nav.init")
+    </script>
+    <script>
+    _when_.eng("eng.messagebar.init")
+    </script>
+    <script>
+    _when_.eng("eng.utils.responsify")
+    </script>
+    <script>
+    _when_.eng("eng.tips.init")
+</script>
+<!-- /M:header-global--> 
+	
+ 
+	<!-- M:header-post -->
+
+<header class="header container" itemscope="" itemtype="http://schema.org/BlogPosting">
+         
+	<h1 class="h1" itemprop="headline"><font><font>Wow factor: flow simulator in the browser window</font></font></h1>
+	<p class="byline">
+		<span class="byline-container">
+		<span class="by"><font><font>OF </font></font></span>
+		<a rel="author" href="http://de.engadget.com/about/editors/anton-waldt/"><strong itemprop="author"><font><font>Anton Forest T</font></font></strong></a> <span class="tweet"><a href="http://twitter.com/Waldt23" target="_blank"><i class="s-twitter-bird"></i><font><font> @ Waldt23</font></font></a></span>
+
+		<i class="s-icn-bullet"></i>
+		<span class="timeago" datetime="2014-11-18T08:45:00-05:00"><font><font>18/11/2014 at 14:45:00 CLOCK</font></font></span>
+		</span>
+		<a class="comment-count" href="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/#comments">
+			<i class="s-comment-bubble-black-12"></i>
+	                        <span data-lf-article-id="20995237" itemprop="interactionCount"><font><font>0</font></font></span>
+		</a>
+	</p>
+</header>
+
+<!-- /M --> 
+	 
+	 
+</div>
+
+<!-- Page wrapper -->
+<div id="page" class="container ">
+	<!-- Page body -->
+	<div id="body">
+		 
+		 
+		 
+		 
+		<div class="copy post-body" itemprop="articleBody">
+	<div style="text-align: center;"><img data-credit="haxiomic" height="419" src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/tumblr_nf6z6ykmpm1t5fphqo5_500.gif" width="630" data-mep="567075" alt=""></div>
+<br><font><font>
+The coder </font></font><a href="https://github.com/haxiomic" target="_blank"><font><font>George Corney aka haxiomic</font></font></a><font><font> has a small, but very fine </font></font><a href="http://de.engadget.com/tag/Chrome+Experiment/"><font><font>Chrome Experiment</font></font></a><font><font> decided, in which the motion dynamics of a liquid </font></font><a href="https://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=UltraHigh" target="_blank"><font><font>simulates the browser window</font></font></a><font><font> is: A more or less violent thrust with the mouse and you can sit back to admire the continued momentum. </font><font>By which the browser Stunt both as meditation background as well as cultured Zeittotschläger well qualified.</font></font><br> 
+	 
+
+	
+
+	
+
+<p class="read-more">
+<a href="http://de.engadget.com/2014/11/18/wow-effekt-stromungssimulator-im-browser-fenster/#comments"><i class="s-comment-bubble-black-12"></i> <strong><span data-lf-article-id="20995237"><font><font>0</font></font></span><font><font> &nbsp;COMMENTS</font></font></strong></a>
+			<span class="social-tools">
+				<div class="aol-share"><a class="s-btn-fb" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_facebook&t=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster" title="Share on Facebook" target="_blank"><b class="aol-share-count aol-share-count-facebook-20995237"><font><font>6 </font></font></b></a><a class="s-btn-tw" href="https://twitter.com/share?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_twitter&text=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster&via=de_engadget" title="Share on Twitter" target="_blank"><b class="aol-share-count aol-share-count-twitter-20995237"><font><font>1 </font></font></b></a><a class="s-btn-gplus" href="https://plus.google.com/share?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_googleplus" title="Google Plus" target="_blank"><b class="aol-share-count aol-share-count-googleplus-20995237"><font><font>0</font></font></b></a></div>
+
+				<a href="javascript:void()" class="share-more-toggle" target="_blank"><i class="s-icn-share"></i><font><font> Share </font></font><i class="s-icn-arw-bl-down"></i></a>
+			
+			</span>
+			<span class="share-more" style="display:none">
+				<div class="aol-share"><a class="s-btn-fb" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_facebook&t=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster" title="Share on Facebook" target="_blank"><b class="aol-share-count aol-share-count-facebook-20995237"><font><font>6 </font></font></b></a><a class="s-btn-tw" href="https://twitter.com/share?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_twitter&text=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster&via=de_engadget" title="Share on Twitter" target="_blank"><b class="aol-share-count aol-share-count-twitter-20995237"><font><font>1 </font></font></b></a><a class="s-btn-gplus" href="https://plus.google.com/share?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_googleplus" title="Google Plus" target="_blank"><b class="aol-share-count aol-share-count-googleplus-20995237"><font><font>0 </font></font></b></a><a class="s-btn-pint" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_pinterest&media=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fc99ca9a6d465c6493a428e0ebc0e1b74%2F201104880%2Ftumblr_nf6z6ykmpm1t5fphqo5_500.gif&description=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster" title="Pin it on Pinterest" target="_blank"><b class="aol-share-count aol-share-count-pinterest-20995237"><font><font>0 </font></font></b></a><a class="s-btn-stupon" href="https://www.stumbleupon.com/submit?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_stumbleupon" title="Submit to StumbleUpon" target="_blank"><b class="aol-share-count aol-share-count-stumbleupon-20995237"><font><font>0 </font></font></b></a><a class="s-btn-reddit" href="https://www.reddit.com/submit?url=http%3A%2F%2Fde.engadget.com%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F%3Fa_dgi%3Daolshare_reddit&title=Mit%20Wow-Effekt%3A%20Str%C3%B6mungssimulator%20im%20Browser-Fenster" title="Submit to Reddit" target="_blank"><b class="aol-share-count aol-share-count-reddit-20995237"><font><font>0</font></font></b></a></div>
+			</span>
+			</p>
+</div><!-- /.post-body -->
+
+<script>_when_.eng("eng.perm.init")</script>
+
+<div class="post-meta">
+	
+	<aside class="meta-sources">
+            
+                <span class="via"> <p> <strong><font><font>VIA: </font></font></strong> <a href="http://boingboing.net/2014/11/17/this-browser-based-fluid-dynam.html" target="_blank"><font><font>Boing Boing</font></font></a><!--//--> </p></span>
+		<span class="source"> <p> <strong><font><font>SOURCE: </font></font></strong> <a href="https://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=UltraHigh" target="_blank"><font><font>WebGL experiment fluid</font></font></a><!--//--></p></span>
+		<span class="more-coverage"> </span>
+              
+	</aside>
+	
+
+        <aside class="meta-tags">
+	<strong><font><font>Tags: </font></font></strong> <a href="http://de.engadget.com/tag/Browser/"><font><font>browser</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/Chrome/"><font><font>Chrome</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/Chrome+Experiment/"><font><font>Chrome Experiment</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/George+Corney/"><font><font>George Corney</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/GPU+Fluid+Experiment/"><font><font>GPU fluid experiment</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/haxiomic/"><font><font>haxiomic</font></font></a><font><font> , </font></font><a href="http://de.engadget.com/tag/WebGL+Fluid+Experiment/"><font><font>WebGL experiment fluid</font></font></a>
+</aside>
+
+	
+</div><!-- /.post-meta -->
+
+<div role="nav" id="header-post-nav" class="postnav">
+	<div class="container">
+	        <h5><font><font>Wow factor: flow simulator in the browser window</font></font></h5>
+				
+		<div class="nextpost">
+			<span class="next"><font><font>NEXT: </font></font></span>
+			<a href="http://de.engadget.com/2014/11/18/zum-schreien-so-klingt-darth-vader-in-echt/" class="nextlink"><font><font>For crying: So Darth Vader sounds in real</font></font><i class="nextarrows"></i></a>
+		</div>
+		
+	</div>
+</div>
+
+ 
+		 
+		<style>
+.related-wrapper h3{padding: 3px 5px;margin: 10px 0;display: block;background: #39c;color: #fff;font-size: 12px;text-transform: uppercase; font-weight: 400;}
+.related-wrapper {width:99%; padding-top: 20px;}
+.related-wrapper a:nth-child(3), .related-wrapper a:nth-child(6){ margin: 0 2%;}
+.related-wrapper a {width:32%; margin-bottom: 25px;float:left;margin: 0;padding: 5px 0;font-size: 12px; overflow: hidden;}
+.related-wrapper a img{height:129px; width:100%;float:left;}
+.related-wrapper a span{padding-top: 130px;display:block;height:36px;}
+
+@media only screen and (min-width: 768px){
+.related-wrapper h3, .related-wrapper a {font-size: 14px;line-height: 1.4;}
+}
+</style>
+
+<div class="related-wrapper">
+<h3><font><font> FEATURED POSTS </font></font></h3><a href="http://de.engadget.com/2015/02/23/ios-os-x-und-linux-haben-mehr-schwachstellen-als-windows/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/OS-chart_thumbnail.jpg"> <span><font><font>iOS, OS X and Linux have more vulnerabilities than Windows </font></font></span></a><a href="http://de.engadget.com/2015/01/28/ein-browser-namens-vivaldi/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/vivaldi-browser_thumbnail.jpg"> <span><font><font>A browser called Vivaldi </font></font></span></a><a href="http://de.engadget.com/2015/01/27/absturz-bug-firefox-35-0-1-steht-zum-download-bereit/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/firefoxlogo-1339858854_thumbnail.png"> <span><font><font>crash bugs: Firefox 35.0.1 is available for download </font></font></span></a><a href="http://de.engadget.com/2015/01/21/das-ist-der-neue-browser-von-microsoft-fur-windows-10/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/project-spartan-win10-630_thumbnail.jpg"> <span><font><font>This is the new browser from Microsoft for Windows 10 </font></font></span></a><a href="http://de.engadget.com/2015/01/09/reden-statt-surfen-microsofts-neuer-sparta-browser-soll-cortana/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/cortanahero+copy_thumbnail.jpg"> <span><font><font>speeches instead of surfing? </font><font>Microsoft's new Spartan-browser should support Cortana </font></font></span></a><a href="http://de.engadget.com/2014/12/30/aus-fur-internet-explorer-windows-10-soll-mit-neuem-browser-kom/"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/winndows-10HHHHHHHH_thumbnail.jpg"> <span><font><font>from Internet Explorer? </font><font>Windows 10 is to come up with new browser</font></font></span></a><div class="clear"></div>
+</div>
+ 
+		
+ 
+		 
+	</div>
+
+	<!-- Rail -->
+	<div id="rail" class="nocontent">
+		<!-- M:rail-ad-topper -->
+
+<div class="ad rail-ad rail-ad-topper">
+	<script>
+	onBreak({
+		980: function () {
+                        
+			(function(){			
+			document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || io_c3s.writeAd("Yahoo"))+'&pn=aol&p=aol-eng&c=r&l=LREC' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');}());
+
+			
+		}
+	});
+	</script><script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&pn=aol&p=aol-eng&c=r&l=LREC&rand=908056"></script>
+</div>
+
+
+
+
+<!-- /M --> 
+				<!-- M:rail-collection-main -->
+<aside class="rail-google-afc" style="display:none;">
+    <div id="google_afc_results"><font><font>placeholder</font></font></div>
+</aside>
+<script>
+
+	google_ad_header_text = 'Sponsoren Links';
+	google_ad_targets = {"google_afc_results": "3"};
+	google_ad_client = "ca-aol-de-vertical-prt";
+	google_alternate_ad_url = '';
+	google_ad_type = 'text';
+	google_ad_channel = 'engadget';
+	google_language = 'de';
+	google_encoding = 'utf8';
+	google_max_num_ads = '3';
+	google_ad_output = 'js';
+	google_adtest = 'off';
+	google_safe = 'high';
+	google_ad_section = '';
+
+    function google_ad_request_done(x) {
+
+        if (x.length >= 1) {
+            try {
+                x.reverse()
+            } catch (q) {}
+            if (typeof google_ad_targets !== "undefined") {
+                for (google_ad_spot in google_ad_targets) {
+                    var i = false;
+                    try {
+                        i = document.getElementById(google_ad_spot)
+                    } catch (q) {}
+                    if (i != false && i != null) {
+                        var s = google_ad_targets[google_ad_spot];
+                        if (typeof google_ad_header_text == "undefined") {
+                            google_ad_header_text = "Sponsoren Links"
+                        }
+                        var r = "<ul style='display:block;'>";
+                        for (var t = 0; t <= s - 1; t++) {
+                            if (x.length >= 1) {
+                                var w = x.pop();
+                                var u = w.url;
+                                var v = w.visible_url;
+                                var e = w.line1;
+                                var o = w.line2;
+                                var p = w.line3;
+                                var y = (t % 2 == 0) ? "odd" : "even";
+                                r += "<li class='" + y + "'>";
+                                r += "<p class='link1'><a href='" + u + "' class='toplink' target='_blank'>" + e + "</a></p>";
+                                r += "<p>" + o + " " + p + "</p>";
+                    r += "<p class='link2'><a target='_blank' href='" + u + "' class='bottomlink'>" + v + "</a></p>";
+                                r += "</li>"
+                            }
+                        }
+                        r += "</ul>";
+                        i.innerHTML = r
+                    }
+                }
+            }
+        }
+        return true
+    };
+    document.write('<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" language="javascript" type="text/javascript"><\/script>');
+</script><script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" language="javascript" type="text/javascript"></script>
+<div id="rail-collection-main">
+
+	
+			<style>
+.ch-sprite, .channel-sprite {
+background-image: url('http://o.aolcdn.com/os/uk-money/images/AOL_Money_Sprite_Standard.png');
+}
+
+.follow-us-newsletter li{
+list-style: none;
+}
+
+.follow-us-newsletter ul{
+display: block;
+}
+
+.clearfix:after {
+display: table;
+clear: both;
+content: "";
+}
+
+
+.follow-us-newsletter {
+border:1px solid #f4f4f4;
+background-color: #f4f4f4;
+padding:10px;
+margin: 0 0 30px 0;
+}
+
+.follow-us-newsletter .mod-title {
+color:#252525;
+text-align:center;
+font-size:24px;
+border:0;
+padding:10px 0;
+}
+
+.follow-us-newsletter .mod-caption {
+font-weight:100;
+}
+
+.follow-us-newsletter .mod-element.channel {
+padding-bottom:20px;
+}
+
+.follow-us-newsletter .mod-element.channel .mod-entries {
+width:215px;
+margin:auto;
+padding:0;
+}
+
+.follow-us-newsletter .mod-element.channel .mod-entry:first-child {
+margin-left: 0;
+}
+
+.follow-us-newsletter .mod-element.channel .mod-entry {
+float:left;
+margin-left:25px;
+}
+
+.follow-us-newsletter .mod-element.channel .icon {
+display:block;
+width:35px;
+height:35px;
+}
+
+.follow-us-newsletter .mod-element.channel .facebook {
+background-position:0 -18px;
+}
+
+.follow-us-newsletter .mod-element.channel .twitter {
+background-position:-60px -18px;
+}
+
+.follow-us-newsletter .mod-element.channel .google {
+background-position:-116px -18px;
+}
+
+.follow-us-newsletter .mod-element.channel .pinterest {
+background-position:0 0;
+}
+
+.follow-us-newsletter .mod-element.channel .rss {
+background-position:-180px -18px;
+}
+
+.follow-us-newsletter .mod-element.newsletter .mod-form {
+margin-bottom:20px;
+max-height:35px;
+}
+
+.follow-us-newsletter .mod-element.newsletter input {
+max-width:64%;
+border:1px solid #c1c1c1;
+background-color:#FFF;
+color:#c1c1c1;
+font-size:17px;
+padding:5px;
+}
+
+.follow-us-newsletter .mod-element.newsletter .button {
+background-color:#fe2c7e;
+max-width:31px;
+font-size:14px;
+color:#FFF;
+text-transform:uppercase;
+font-weight:700;
+padding:9px 11px 7px;
+}
+
+.follow-us-newsletter .mod-element.newsletter .button:hover {
+text-decoration:none;
+color:#eee;
+}
+
+.follow-us-newsletter .mod-element.newsletter .mod-form b {
+display:block;
+border:1px dotted #c1c1c1;
+text-align:center;
+padding:5px;
+}
+
+.follow-us-newsletter .mod-element.newsletter .message {
+margin-bottom:5px;
+color:red;
+text-align:center;
+}
+</style>
+
+<div id="follow-us-newsletter" class="rr-module follow-us-newsletter" data-mod="rrail-follow-us-newsletter">
+
+    <div class="mod-element channel">
+        <div class="mod-title custom-font"><font><font>IMPACT Engadget</font></font></div>
+        <ul class="mod-entries clearfix">
+            <li class="mod-entry">
+                <a href="https://www.facebook.com/Engadget.German" target="_blank" title="Facebook Engadget" class="mod-link">
+                <span class="channel-sprite icon facebook"></span></a>
+            </li>
+            <li class="mod-entry">
+                <a href="https://twitter.com/de_engadget" target="_blank" title="Engadget Twitter" class="mod-link">
+                    <span class="channel-sprite icon twitter"></span>
+                </a>
+            </li>
+            <li class="mod-entry">
+                <a href="https://plus.google.com/112250049618389877057" target="_blank" title="Engadget Google+" class="mod-link" rel="publisher">
+                    <span class="channel-sprite icon google"></span>
+                </a>
+            </li>           
+            <li class="mod-entry">
+                <a href="http://de.engadget.com/rss.xml" target="_blank" title="Engadget RSS" class="mod-link">
+                    <span class="channel-sprite icon rss"></span>
+                </a>
+            </li>
+        </ul>
+    </div>    
+</div>
+		
+
+	<!-- M:rail-latest-stories -->
+<aside class="module rail-latest beacon-ping-cids" data-beacon="{&quot;p&quot;:{&quot;mlid&quot;:&quot;featured-stories&quot;,&quot;cid&quot;:&quot;default.features&quot;}}">
+<h3 class="hed green"><font><font>FEATURES</font></font></h3><div id="p21146422"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features1&quot;,&quot;plid&quot;:21146422}}">
+
+<a href="http://de.engadget.com/2015/02/25/pebble-time-sammelt-uber-nacht-8-millionen-ein-macht-kickstarte/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 0&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk1&quot;}}"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/xecdfrvgtbhnjm88888hh_thumbnail.jpg" class="feature-image" alt="Post Image"></a>
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/25/pebble-time-sammelt-uber-nacht-8-millionen-ein-macht-kickstarte/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 0&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk2&quot;}}"><span id="pt21146422"><font><font>Pebble Time accumulated over 8 million a night, makes Kickstarter to the shop</font></font></span></a></h3>
+<div class="meta"><time datetime="Wed, 25 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>10 hours ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/25/pebble-time-sammelt-uber-nacht-8-millionen-ein-macht-kickstarte/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21146422"><font><font>3</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21145933"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features2&quot;,&quot;plid&quot;:21145933}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/24/google-warnt-gmail-autocomplete-ist-buggy-priorisiert-abwegige/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 1&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk3&quot;}}"><span id="pt21145933"><font><font>Google warns Gmail autocomplete is buggy, prioritized outlandish Contacts</font></font></span></a></h3>
+<div class="meta"><time datetime="Tue, 24 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>a day ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/24/google-warnt-gmail-autocomplete-ist-buggy-priorisiert-abwegige/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21145933"><font><font>0</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21145284"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features3&quot;,&quot;plid&quot;:21145284}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/22/cyberport-leakt-htc-m9/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 2&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk4&quot;}}"><span id="pt21145284"><font><font>Cyberport leakt HTC M9</font></font></span></a></h3>
+<div class="meta"><time datetime="Sun, 22 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>3 days ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/22/cyberport-leakt-htc-m9/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21145284"><font><font>2</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21144130"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features4&quot;,&quot;plid&quot;:21144130}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/19/krumelmonster-im-engadget-interview-video/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 3&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk5&quot;}}"><span id="pt21144130"><font><font>Cookie Monster in Engadget Interview (Video)</font></font></span></a></h3>
+<div class="meta"><time datetime="Thu, 19 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>6 days ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/19/krumelmonster-im-engadget-interview-video/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21144130"><font><font>0</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21143363"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features5&quot;,&quot;plid&quot;:21143363}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/17/apple-watch-wegen-zickiger-sensoren-mit-weniger-korperkontakt-g/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 4&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk6&quot;}}"><span id="pt21143363"><font><font>Watch Apple due bitchy sensors with less body contact (rumor)</font></font></span></a></h3>
+<div class="meta"><time datetime="Tue, 17 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>8 days ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/17/apple-watch-wegen-zickiger-sensoren-mit-weniger-korperkontakt-g/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21143363"><font><font>4</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21141939"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features6&quot;,&quot;plid&quot;:21141939}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/12/lutz-das-erste-fahrerlose-auto-aus-groszbritannien/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 5&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk7&quot;}}"><span id="pt21141939"><font><font>Lutz: The first driverless "Auto" in the UK</font></font></span></a></h3>
+<div class="meta"><time datetime="Thu, 12 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>13 days ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/12/lutz-das-erste-fahrerlose-auto-aus-groszbritannien/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21141939"><font><font>1</font></font></span></a></span></div>
+</header>
+</article></div><div id="p21141261"><article class="feature beacon-ping-plids" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;features7&quot;,&quot;plid&quot;:21141261}}">
+
+<header class="feature-overlay">
+<h3 class="feature-title"><a href="http://de.engadget.com/2015/02/11/samsung-unsere-tvs-sind-zwar-smart-aber-belauschen-trotzdem-kei/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Right rail featured stories&#39;, &#39;Click&#39;, &#39;Article 6&#39;]);" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;lnk8&quot;}}"><span id="pt21141261"><font><font>Samsung: Our TVs are indeed smart but decent and eavesdrop on anyone determined</font></font></span></a></h3>
+<div class="meta"><time datetime="Wed, 11 Feb 2015 00:00:00 -0500" class="time-stamp"><font><font>14 days ago</font></font></time> <span class="comment-count"><a href="http://de.engadget.com/2015/02/11/samsung-unsere-tvs-sind-zwar-smart-aber-belauschen-trotzdem-kei/#comments"><i class="s-comment-bubble-black-12"></i>&nbsp;<span data-lf-article-id="21141261"><font><font>3</font></font></span></a></span></div>
+</header>
+</article></div></aside>
+<!-- /M -->
+	
+	<aside class="module google-afc-container" style="display:none">
+		<p class="google-afc-title">
+			<a href="http://suche.aol.de/aol/about?#sl" target="_blank"><font><font>SPONSORED LINKS</font></font></a>
+		</p>
+		<div id="rail-google-afc"></div>
+	</aside>
+	
+
+
+</div>
+<!-- /M --> 
+		 
+		<!-- M:rail-ad-skyscraper -->
+
+
+<div id="btf"></div>
+<div class="ad rail-ad rail-ad-skyscraper">
+	<script>
+	onBreak({
+		980: function () {
+                     (function(){			
+			document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || io_c3s.writeAd("Yahoo"))+'&pn=aol&p=aol-eng&c=r&l=SKY' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');}());
+			
+			  
+		}
+	});
+	</script><script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&pn=aol&p=aol-eng&c=r&l=SKY&rand=1261908"></script>
+</div>
+
+<!-- /M --> 
+		<script>_when_.eng("eng.rail.init")</script>
+ 
+	</div>
+</div>
+
+<!-- Page footer -->
+<div id="footer">
+	 
+	 
+	 
+	 
+	<div id="mobileaddiv">
+
+<!-- Ads -->
+<style>@media only screen and (max-width: 768px) {#mobileaddiv {width: 100%;position: fixed;bottom:-4px;z-index: 1000; overflow-y: visible; padding:0;margin:0}}
+@media only screen and (min-width:768px){body #header{margin-bottom:10px}}
+</style>
+
+<script>
+	onBreak({
+		980: function () {
+		
+},
+		768: function() {
+			
+		},
+		320: function() {
+			(function(){
+				
+				document.write('<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=50 SRC="http://ads.yahoo.com/st?ad_type=iframe&ad_size=300x50&section=836311&yyob=INSERT_YEAR_OF_BIRTH_VALUE_HERE&ycg=INSERT_GENDER_VALUE_HERE&pub_url=${PUB_URL}"></IFRAME>');
+			}());
+		}
+	});
+	</script>
+
+
+</div>
+<div class="clear"></div> 
+	<footer>
+	
+		<div id="footer-feed" class="nocontent">
+			<div class="body">
+				<div class="thirds social-column">
+					<h5><font><font>IMPACT Engadget</font></font></h5>
+					<ul class="social-tools">
+						<li><a href="https://www.facebook.com/Engadget.German"><i class="s-btn-footer-fb"></i></a></li>
+						<li><a href="https://twitter.com/de_engadget"><i class="s-btn-footer-tw"></i></a></li>
+						<li><a href="https://plus.google.com/112250049618389877057"><i class="s-btn-footer-gplus"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="thirds">
+					<h5><font><font>Engadget Apps</font></font></h5>
+					<ul class="engadget-apps">
+						<li><a href="https://play.google.com/store/apps/details?id=com.aol.mobile.engadget&feature=nav_result#?t=W251bGwsMSwyLDNd" target="_blank"><i class="s-btn-footer-droid"></i></a></li>
+						<li><a href="http://itunes.apple.com/us/app/engadget/id347839246?mt=8&uo=4" target="_blank"><i class="s-btn-footer-iphone"></i></a></li>
+						<li><a href="http://itunes.apple.com/us/app/engadget-for-ipad/id409892845?mt=8&uo=4" target="_blank"><i class="s-btn-footer-ipad"></i></a></li>
+					</ul>
+					
+				</div>
+			
+			</div><!-- body -->
+		</div><!-- footer-feed -->
+
+	</footer>
+
+
+					<div class="clear"></div> 
+	 
+	 
+	 	
+
+
+<!-- Legal, etc. -->
+<div id="after-footer">
+<div class="inner-footer">
+		<div id="footer-language">
+			<h5><font><font>International Issues</font></font></h5>
+			<ul class="language">
+				<li lang="en">
+					<a href="http://www.engadget.com/?edition=usa" title="US"><font><font>
+						US
+					</font></font></a>
+				</li>
+				<li lang="en">
+					<a href="http://www.engadget.com/uk/" title="UK"><font><font>
+						UK
+					</font></font></a>
+				</li>
+				<li lang="es">
+					<a href="http://es.engadget.com/" title="Spanish"><font><font>
+						Español
+					</font></font></a>
+				</li>
+				<li lang="zh">
+					<a href="http://chinese.engadget.com/" title="Traditional Chinese"><font><font>
+						繁體 中文
+					</font></font></a>
+				</li>
+				<li lang="zh">
+					<a href="http://cn.engadget.com/" title="Simplified Chinese"><font><font>
+						简体 中文
+					</font></font></a>
+				</li>
+				<li lang="ja">
+					<a href="http://japanese.engadget.com/" title="Japanese"><font><font>
+						日本 版
+					</font></font></a>
+				</li>
+			
+			</ul>
+		</div>
+		<div id="footer-legal">
+			<a href="http://www.aoltech.com/" class="s-aol-tech-logo"><font><font>AOL Tech.</font></font></a>
+		
+			<p>
+				<span><font><font>
+					© AOL Germany 2015 - </font></font><br><font><font>
+					. All rights reserved
+				 </font></font></span>
+		
+				<a href="http://hilfe.aol.de/article-legal/copyright/"><font><font>Copyright </font></font></a>
+				<a href="http://hilfe.aol.de/article-legal/impressum/"><font><font>Imprint </font></font></a>
+				<a href="http://de.engadget.com/about/tips/"><font><font>Contact </font></font></a>
+				<a href="http://de.engadget.com/about/editors/"><font><font>Team </font></font></a>
+				<a href="http://hilfe.aol.de/article-legal/datenschutz/"><font><font>Privacy </font></font></a>
+				<a href="http://hilfe.aol.de/article-legal/jugendschutz/"><font><font>protection of minors </font></font></a>
+				<a href="http://de.engadget.com/advertise/"><font><font>Advertise on Engadget</font></font></a>
+			</p>
+		</div>
+	</div>
+ 
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script>
+	function adsReloadAd(id){
+		//$('#'+id+' iframe').attr( 'src', function ( i, val ) { return val; });
+	}
+</script>
+<script>
+// iOS scaling fix
+(function(e){var c="addEventListener",b="gesturestart",g="querySelectorAll",f=[1,1],d=g in e?e[g]("meta[name=viewport]"):[];function a(){d.content="width=device-width,minimum-scale="+f[0]+",maximum-scale="+f[1];e.removeEventListener(b,a,true)}if((d=d[d.length-1])&&c in e){a();f=[0.25,1.6];e[c](b,a,true)}}(document));
+// hide chrome on mobile
+// /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+//  if (!pageYOffset) window.scrollTo(0, 1);
+// }, 1000);
+</script>
+
+<script>
+			
+			document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || "2142927130")+'&pn=aol&p=aol-eng&c=r&l=FOOT' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');
+
+document.write('<script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f='+(((location.hash).match(/spaceid=([0-9]+)/)||[])[1] || "2142927130")+'&pn=aol&p=aol-eng&c=r&l=FSRVY' + ((typeof aolDemoData!=='undefined')? '&pd_x='+aolDemoData : '') + '&rand='+Math.round(Math.random()*10000000)+'"><\/script>');
+
+
+</script><script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&pn=aol&p=aol-eng&c=r&l=FOOT&rand=3370452"></script><script language="javascript" type="text/javascript" src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&pn=aol&p=aol-eng&c=r&l=FSRVY&rand=7961990"></script>
+
+<noscript>
+&lt;iframe src="http://eu-pn2.adserver.yahoo.com/a?f=2142927130&amp;pn=aol&amp;p=aol-eng&amp;c=sh&amp;l=FOOT" width="0" height="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
+</noscript>
+
+<noscript>
+&lt;iframe src="http://eu-pn2.adserver.yahoo.com/a?f=2142927131&amp;pn=aol&amp;p=aol-eng&amp;c=sh&amp;l=FSRVY" width="0" height="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
+</noscript>
+
+
+<script>_when_.eng('eng.beaconTracking')</script>
+
+<!-- SZM VERSION="2.0" -->
+<script type="text/javascript">
+var iam_data={"st":"aolsvc","cp":"1de_engadget","sv":"in","co":"kommentar"}
+iom.c(iam_data);</script><script src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/tx.io"></script>
+<!--/SZM --> 
+
+<script type="text/javascript" id="AolTrafficInfo" data-postid="20995237" data-blogid="401">
+new Image().src = 'http://de.engadget.com/traffic/' + '?t=js&bv=&os=20995237&tz=&lg=&rv=&rsv=&pw=%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F&cb=421965843';
+</script>
+<noscript>
+&lt;img src="http://de.engadget.com/traffic/?t=px&amp;bv=JavaScript+Disabled&amp;os=20995237&amp;tz=default&amp;lg=&amp;rv=&amp;rsv=&amp;pw=%2F2014%2F11%2F18%2Fwow-effekt-stromungssimulator-im-browser-fenster%2F&amp;cb=1206348313" alt="the end" width="1" height="1"border="0" /&gt;
+</noscript>
+<div id="s2c-widget"></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Wow factor  flow simulator in the browser window - Engadget Germany_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="s2c-widget-mask"></div></body></html>

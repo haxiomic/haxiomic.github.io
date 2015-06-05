@@ -1,0 +1,63 @@
+@import "skeleton.haxiomic.scss";
+
+body{
+	font-family: "PT Serif";
+}
+
+section{
+	margin-bottom: 50px;
+
+	header{
+		font-size: 3rem;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $light-grey;
+	}
+}
+
+.container{
+	header{
+		margin-bottom: 20px;
+
+		.title{
+			font-family: "Source Sans Pro";
+			text-align: center;
+		}
+
+		.contact-details{
+			text-align: right;
+
+			span{
+				display: block;
+			}
+		}
+	}
+}
+
+.jobs, .projects{
+	article{
+		margin-bottom: 20px;
+
+		h6{
+			display: inline;
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+		}
+
+		.title-column{
+			h6{
+				font-size: 140%;
+			}
+
+			.date{
+				display: block;
+			}
+		}
+
+		.details-column{
+			p{
+				margin: 0 0 10px 0;
+			}
+		}
+	}
+}

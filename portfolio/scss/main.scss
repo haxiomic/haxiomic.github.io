@@ -1,0 +1,265 @@
+@import "../lib/scss/normalize.scss";
+@import "../lib/scss/skeleton.haxiomic.scss";
+@import "../lib/scss/color-palette-ui.scss";
+@import "hplaceholder.scss";
+@import "fonts.scss";
+@import "colors/blues.scss";
+
+//expose color palette to palette ui
+@include expose-palette($palette);
+
+$color-body-dark: map-get($palette, grey-5);
+$color-header-dark: map-get($palette, medium-0);
+
+$std-pad: 30px;
+$std-content-pad: 15px;
+$std-radius: 4px;
+$std-border: 1px solid map-get($palette, grey-0);
+$std-transition-time: 0.3s;
+$std-transition: $std-transition-time;
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: map-get($palette, grey-1);
+	color: $color-body-dark;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	color: $color-header-dark;
+}
+
+h6{
+	margin-bottom: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.main-header{
+	display: none;
+	height: 100px;
+	background-color: map-get($palette, dark-0);
+	line-height: 100px;
+	color: map-get($palette, dark-1);
+	font-size: 150%;
+	border-bottom: $std-border;
+	margin-bottom: $std-pad;
+}
+
+.main-content{
+	padding: 0 0 0 0;
+
+	.item-group-header{
+		text-align: center;
+		margin: $std-pad * 1.5 0 $std-pad 0;
+		font-size: 200%;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: map-get($palette, grey-3);
+		text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.66)
+	}
+
+	.item{
+		margin-bottom: $std-pad;
+
+		background-color: map-get($palette, grey-2);
+		border-radius: $std-radius;
+		border: $std-border;
+
+		overflow: hidden;
+
+
+		.title-row{		
+			.title{
+				display: inline-block;
+
+				.title-subtitle{
+					font-size: 40%;
+				}
+			}
+
+
+			.project-buttons{
+				color: map-get($palette, grey-3);
+				text-shadow: 0px 0px 1px map-get($palette, grey-4);
+
+				a{
+					color: inherit;
+					transition: color $std-transition;
+				}
+				a:hover{
+					color: map-get($palette, grey-4);
+				}
+				h1, h2, h3, h4, h5, h6{
+					color: inherit;
+				}
+			}
+
+			@media (#{$bp-larger-than-phablet}) {
+				.project-buttons{
+					text-align: right;
+				}
+			}
+		}
+
+		.tags{
+			font-size: 80%;
+			margin-bottom: $std-content-pad * 1.5;
+
+			color: map-get($palette, grey-4);
+
+			ul{
+				@extend .inline-list;
+			}
+		}
+
+		.details{
+			// margin-bottom: $std-content-pad;
+			padding: $std-pad $std-pad 0 $std-pad;
+
+			.info{
+				h1, h2, h3, h4, h5, h6{
+					margin-top: $std-content-pad;
+					color: map-get($palette, grey-5);
+				}
+				p{
+					margin-bottom: $std-content-pad;
+				}
+				ul{
+					margin: 0 0 $std-content-pad 0;
+					li{
+						margin: 0;
+					}
+				}
+			}
+
+			.logo-group{
+				margin-bottom: $std-content-pad;
+
+				img{
+					height: 30px;
+					width: auto;
+				}
+
+				a:not(:last-child){
+					margin-right: $std-content-pad;
+				}
+			}
+
+			.technologies{
+				// margin-top: $std-content-pad;
+				border-top: $std-border;
+				padding: $std-content-pad 0 0 0;
+
+				color: map-get($palette, grey-4);
+				font-size: 110%;
+			}
+		}
+
+		.demo{
+			position: relative;
+
+			.caption{
+				margin: 0 0 $std-content-pad 0;
+				padding: 0 $std-pad;
+				color: map-get($palette, grey-4);
+
+				text-align: left;
+				font-style: italic;
+				font-family: Georgia,Times,"Times New Roman",serif
+			}
+
+			.images{
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.hplaceholder, .placeholder{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.hplaceholder-play{
+				$play-size: 60px;
+				width: $play-size;
+				height: $play-size;
+				// border: 1px solid red;
+				font-family: "font-icons";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				text-align: center;
+				font-size: $play-size;
+				color: white;
+			}
+
+			.hplaceholder-play::after{
+				content: "\e602";
+			}
+		}
+
+		[data-readmore-toggle]{
+			padding: 10px $std-pad $std-content-pad;
+			font-size: 110%;
+		}
+	}
+}
+
+.seperator{
+	margin: 0 $std-content-pad * .5;
+}
+
+.inline-list{
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 28px;
+
+	li{
+		display: inline;
+		margin: 0 $std-content-pad 0 0;
+		padding: 0;
+
+		&:not(:last-child)::after{
+			content:'';
+		}
+	}
+}
+
+.grey-tag{
+	padding: 5px 8px;
+	background-color: map-get($palette, grey-1);
+	border-radius: 4px;
+	color: map-get($palette, grey-4);
+	white-space: nowrap;
+}
+
+.code{
+	background-color: map-get($palette, grey-1);
+	padding: 2px 8px;
+	font-size: 90%;
+}
+
+.code-inline{
+	margin-left: 2px;
+	margin-right: 2px;
+	font-family: "Courier New", Courier, monospace;
+}

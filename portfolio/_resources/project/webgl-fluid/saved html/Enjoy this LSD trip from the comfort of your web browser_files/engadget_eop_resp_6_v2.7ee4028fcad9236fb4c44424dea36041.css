@@ -1,0 +1,293 @@
+/* ------------------
+	Engadget - EOP - RESP - 6 (Sponsored Content by Gravity)
+------------------------- */
+
+@font-face {
+    font-family: 'weblysleek';
+    src: url('../../fonts/WeblySleek-Semibold/weblysleekuisb-webfont.eot');
+    src: url('../../fonts/WeblySleek-Semibold/weblysleekuisb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/WeblySleek-Semibold/weblysleekuisb-webfont.woff') format('woff'),
+         url('../../fonts/WeblySleek-Semibold/weblysleekuisb-webfont.ttf') format('truetype'),
+         url('../../fonts/WeblySleek-Semibold/weblysleekuisb-webfont.svg#weblysleek_uisemibold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'weblysleek';
+    src: url('../../fonts/WeblySleek-Semilight/weblysleekuisl-webfont.eot');
+    src: url('../../fonts/WeblySleek-Semilight/weblysleekuisl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/WeblySleek-Semilight/weblysleekuisl-webfont.woff') format('woff'),
+         url('../../fonts/WeblySleek-Semilight/weblysleekuisl-webfont.ttf') format('truetype'),
+         url('../../fonts/WeblySleek-Semilight/weblysleekuisl-webfont.svg#weblysleek_uisemilight') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ------------------
+  Widget Container
+------------------------- */
+#grv_widget {
+	position: relative;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+	font-family: "Segoe UI",proxima-nova,proxima-nova-1,proxima-nova-2,"Proxima Nova","weblysleek",Helvetica,Arial,sans-serif;
+  border-top: 1px solid #d5d5d5;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+/* ------------------
+  Widget Title
+------------------------- */
+h3.grv_stories_header {
+	background: #39c;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Segoe UI",proxima-nova,proxima-nova-1,proxima-nova-2,"Proxima Nova","weblysleek",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 3px 5px;
+	text-transform: uppercase;
+}
+
+/* ------------------
+  Articles
+------------------------- */
+ul.grv_articles {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+	overflow: visible;
+  /*border-bottom: 1px solid #d5d5d5;
+  height: 190px;*/
+}
+
+li.grv_article {
+	float: left;
+  width: 32%;
+  height: 177px;
+  position: relative;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.grv_article.grv_num_0, 
+.grv_article.grv_num_1, 
+.grv_article.grv_num_2 {
+	margin-bottom: 25px;
+}
+
+.grv_article.grv_num_1, 
+.grv_article.grv_num_4{
+	margin: 0 2%;
+}
+
+a.grv_article_title {
+	display: block;
+	position: relative;
+	line-height: 18px;
+	max-height: 38px;
+	overflow: hidden;
+	text-decoration: none;
+	padding-top: 5px;
+  color: #3e433e;
+  font-size: 16px;
+  font-weight: 400;
+  z-index: 10;
+}
+a.grv_article_title:hover {
+  color: #39c;
+}
+
+li.grv_article a.grv_img_link {
+  height: 129px;
+  width: 100%;
+  display: block; 
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  z-index: 0;
+}
+
+.grv_date {
+	display: inline;
+	color: #777;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.grv_is_sponsored .grv_date{
+	display: none;
+}
+
+.grv_is_sponsored a.grv_article_title {
+	padding-top: 15px;
+}
+
+.grv_is_sponsored .grv_display_name {
+	display: block;
+  color: #39c;
+	font-size: 11px;
+	font-weight: 200;
+	line-height: 15px;
+	pointer-events: none;
+	position: absolute;
+	top: 135px;
+	left: 0px;
+	text-decoration: none;
+}
+
+.grv_is_sponsored .grv_display_name:before {
+	content: 'Promoted by ';
+}
+
+/* ------------------
+ 	Gravity Attribution
+------------------------- */
+#grv_badge {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #fff;
+}
+.grv_badge_inner {
+	padding-right: 0px;
+}
+
+.grv_text_badge #grv_personalization {
+	color: #fff;
+}
+
+.grv_text_badge #grv_personalization::before {
+	color: #fff;
+	content: 'Sponsored Content ';
+}
+
+
+
+/* ------------------
+ less than 520
+------------------------- */
+.grv_less_520 .grv_stories_header {
+}
+.grv_less_520 li.grv_article {
+  width: 32%;
+  margin: 0;
+  padding: 0;
+  height: 188px;
+}
+.grv_less_520 li.grv_article.grv_num_0,
+.grv_less_520 li.grv_article.grv_num_1,
+.grv_less_520 li.grv_article.grv_num_2 {
+	margin-bottom: 15px;
+}
+.grv_less_520 li.grv_article.grv_num_1,
+.grv_less_520 li.grv_article.grv_num_4{
+	margin: 0 2%;
+}
+
+.grv_less_520 a.grv_article_title {
+ 	background: none;
+  text-align: left;
+	padding-top: 5px;
+}
+
+.grv_less_520 .grv_is_sponsored a.grv_article_title {
+	padding-top: 20px;
+}
+
+.grv_less_520 a.grv_article_title:hover {
+	text-decoration: underline;
+}
+.grv_less_520 li.grv_article a.grv_img_link {
+  background: #f0f0f0;
+}
+.grv_less_520 li.grv_article.grv_has_image a.grv_img_link {
+  background: #f0f0f0;
+}
+
+/* ------------------
+ less than 322
+------------------------- */
+#grv_widget.grv_less_481 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.grv_less_481 h3.grv_stories_header {
+	font-size: 16px;
+	line-height: 20px;
+	height: 20px;
+}
+.grv_less_481 ul.grv_articles {
+  padding: 10px;
+}
+.grv_less_481 li.grv_article.grv_num_0,
+.grv_less_481 li.grv_article.grv_num_1,
+.grv_less_481 li.grv_article.grv_num_2,
+.grv_less_481 li.grv_article.grv_num_3,
+.grv_less_481 li.grv_article.grv_num_4,
+.grv_less_481 li.grv_article.grv_num_5 {
+  width: 100%;
+  height: auto;
+  margin: 0 0 15px 0;
+  padding: 0;
+  float: left;
+}
+
+
+.grv_less_481 a.grv_article_title,
+.grv_less_481 li.grv_article.grv_is_sponsored a.grv_article_title {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: normal;
+	height: auto;
+	max-height: 28px;
+	position: relative;
+	padding: 10px 3px 4px 0px;
+	display: block;
+}
+
+.grv_less_481 a.grv_article_title:hover {
+	text-decoration: underline;
+}
+
+.grv_less_481 li.grv_article a.grv_img_link {
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Publisher */
+.grv_less_481 ul.grv_articles {
+	overflow: hidden;
+  border-bottom: none;
+  height: auto;
+}
+.grv_less_481 .grv_is_sponsored .grv_display_name {
+  position: relative;
+  top: 0;
+}
+
+.grv_less_481 #grv_badge {
+  top: 16px;
+  right: 8px;
+}
+.grv_less_481 #grv_badge a {
+  color: #fff;	
+}
+
+/* GRV LESS 322 */
+
+.grv_less_322 li.grv_article a.grv_img_link {
+	height: 160px;
+}
+
+
+#grvWidgetStylesLoaded_engadget_eop_resp_6_v2_7ee4028fcad9236fb4c44424dea36041_css {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}

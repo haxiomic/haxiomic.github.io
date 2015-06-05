@@ -1,0 +1,28 @@
+;
+(function(){try{
+  var AdblockPlus=new function(){this.detect=function(px,callback){var detected=false;var checksRemain=2;var error1=false;var error2=false;if(typeof callback!="function")return;px+="?ch=*&rn=*";function beforeCheck(callback,timeout){if(checksRemain==0|| timeout>1E3)callback(checksRemain==0&&detected);else setTimeout(function(){beforeCheck(callback,timeout*2)},timeout*2)}function checkImages(){if(--checksRemain)return;detected=!error1&&error2}var random=Math.random()*11;var img1=new Image;img1.onload=checkImages;img1.onerror=function(){error1=true;checkImages()};img1.src=px.replace(/\*/,1).replace(/\*/,random);var img2=new Image;img2.onload=checkImages;img2.onerror=function(){error2=true;checkImages()};img2.src=px.replace(/\*/,2).replace(/\*/,random);beforeCheck(callback,250)}},
+      abpMtimeMatches=/\bgrvAbpMtime\s*=\s*(\d+)\b/.exec(document.cookie.toString()),
+      abpMtime=abpMtimeMatches && abpMtimeMatches[1] && parseInt(abpMtimeMatches[1]);
+  if(!abpMtime || new Date().getTime() - abpMtime > 86400000) {
+    window.console && console.log && console.log('Grv ABP detection');
+    AdblockPlus.detect('http://i.api.grvcdn.com/personalization/px.gif', function(usesABP) {
+      if(usesABP)
+        document.cookie='grvUsesAbp=1; Path=/; Max-Age=604800';
+      else
+        document.cookie='grvUsesAbp=0; Path=/; Max-Age=0';
+      document.cookie='grvAbpMtime=' + (new Date).getTime() + '; Path=/; Max-Age=31449600';
+    });
+  }
+}
+catch(ex){
+  if(window.console && console.log) {
+    console.log('Grv Suppressing exception:');
+    console.log(ex);
+  }
+}})();
+    
+(function(){try{
+  var px = new Image;
+  px.src = '//pixel.advertising.com/ups/41/sync?uid=5f4a803b6a88697989ad318956e52102';
+}catch(ex){}})();
+      

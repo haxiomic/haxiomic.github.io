@@ -1,0 +1,192 @@
+/* Miller Styles */
+html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+p {
+	font-family: helvetica, arial, sans-serif;
+	color: white; text-align: center;
+	font-size: 20px;
+}
+
+a {z-index: 500;}
+
+img {text-decoration: none; border: 0px;}
+
+#content { 
+	background: #000000;
+	width: 100%;
+	height: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+#overlay {
+	position: absolute;
+	display: inline-block;
+	z-index: 1;	
+    height: 100%;
+    width: 100%;	
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.logo {
+	text-align: center;
+    
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+}
+
+.logo img {width: 400px;}
+
+#credit, #social {padding: 20px 10px 20px 10px;}
+#credit img {width: 32px;}
+#credit {
+	position: absolute;
+	bottom: 0%;
+	z-index: 25;
+}
+#social img {padding: 0 8.5px 0 8.5px;}
+#social {
+	
+    float: left;
+}
+
+
+/* GUI Styles */
+/* green left border for selects */
+
+	.dg {display: none;}
+
+	.dg .cr.object{
+		border-left: 3px solid #5CB36D;
+	}
+
+	/* disabled row style */
+	.dg .cr.disabled{
+		border-left-color: #353535 !important;
+	}
+	.dg .cr input[disabled]{
+		background: none !important;
+		color: #8C8C8C !important;
+	}
+
+	/* new row type: link */
+	.dg .cr.link, .dg .cr.link .property-name, .dg .cr.link *{
+		cursor: pointer;
+	}
+
+	.dg .cr.link:hover{
+		background: #111;
+	}
+
+	.dg .cr.footer, .dg .cr.footer .property-name, .dg .cr.footer *{
+		font-size: 110%;
+	}
+
+	/* new row type: footer */
+	.dg .cr.footer{
+		color: #4A4C4E;
+		transition: color 0.2s;
+	}
+	.dg .cr.footer:hover{
+		color: #2FA1D6;
+		transition: color 0.2s;
+	}
+
+	/* row icon */
+	.dg .cr [class^="icon-"], [class*=" icon-"]{
+		font-size: 150%;
+		float: right;
+	}
+#links {
+    
+    text-align: center;
+    float: right;
+}
+
+#links a {
+ 
+    font-family: sans-serif;
+    font-size: 0.5em;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#links a:hover {
+ 
+    text-decoration: underline;
+}
+
+#footer {
+    
+    position: absolute;
+	bottom: 0%;
+	z-index: 200;
+    width: 100%;
+    text-align: center;
+}
+
+#links_inner {
+    
+    padding: 0 20px 10px 20px;
+}
+
+
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+	.credit   {display: none;}
+
+	.logo img {width: 250px;}
+	canvas    {display: none;}	
+    
+    #credit, #social {padding: 0 6px 10px 6px;}
+    
+    #links, #social {
+        
+        float: none;
+    }
+    
+    #links {
+        
+        margin-bottom: 6px;
+    }
+    
+    .logo {
+
+        top: 20%;
+        transform: translateY(-20%);
+    }
+    
+    #credit img, #social img {width: 24px;}
+
+}	
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+	.credit   {display: none;}
+	canvas    {display: none;}	
+    
+    #credit, #social {padding: 0 10px 20px 10px;}
+    
+    #links, #social {
+        
+        float: none;
+    }
+    
+    #links {
+        
+        margin-bottom: 10px;
+    }
+}

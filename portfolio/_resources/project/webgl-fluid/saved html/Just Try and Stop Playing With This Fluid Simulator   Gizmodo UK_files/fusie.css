@@ -1,0 +1,250 @@
+@CHARSET "UTF-8";
+
+.fusie_modalback {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 5000000;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.fusie_modalcontent {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 5000000;
+	overflow: auto;
+}
+	 
+.fusie_modalwindow {
+	position: relative;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 85%;
+	max-width: 650px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 40px 10px;
+	color: #666;
+	box-shadow: 0px 0px 15px 0px black;
+	text-align: center;
+	line-height: normal;
+}
+
+.fusie_modalwindow .close_button {
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	cursor: pointer;
+}
+
+.fusie_modalwindow img, .fusie_modalwindow label {
+	display: inline;
+}
+
+.fusie_modalwindow p {
+	margin: 1em 2em;
+}
+
+.fusie_modalwindow .title {
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #333;
+	text-align: center;
+}
+
+.fusie_modalwindow .main .subtitle {
+	text-align: center;
+	font-size: 1.3em;
+	color: #333;
+	font-weight: bold;
+}
+
+.fusie_modalwindow .red {
+	color: red;
+}
+
+.fusie_modalwindow .green {
+	color: green;
+}
+
+.fusie_modalwindow .wrongfield {
+	border-color: red;
+}
+
+.fusie_modalwindow .wrongdiv {
+	border: 1px solid red;
+}
+
+.fusie_modalwindow .errordiv {
+	color: red;
+	padding-top: 4px;
+}
+
+.fusie_modalwindow .main .fake-link, .fusie_modalwindow .main a {
+	color: #006caa;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.fusie_modalwindow .main .pointer {
+	cursor: pointer;
+}
+
+.fusie_modalwindow .main .fake-link:hover, .fusie_modalwindow .main a:hover {
+	text-decoration: underline;
+}
+
+.fusie_modalwindow .main .captcha_holder {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.fusie_modalwindow .main .captcha {
+	margin: 0px auto;
+	display: inline-block;
+}
+
+.fusie_modalwindow .main .mainsuccess {
+	color: green;
+}
+
+.fusie_modalwindow .main .mainerror {
+	color: red;
+}
+
+.fusie_modalwindow .main table {
+	border-spacing: 5px;
+	border-collapse: separate;
+	border: none;
+}
+
+.fusie_modalwindow .main tr {
+	border: none;
+}
+
+.fusie_modalwindow .main td {
+	text-align: center;
+	border: none;
+	padding: 0px;
+}
+
+.fusie_modalwindow .main table input, .fusie_modalwindow .main table select {
+	border-radius: 0px;
+	margin: 0px;
+	width: 65%;
+	max-width: 330px;
+	border: 1px solid #aaa;
+	padding: 0.6em;
+	outline: none;
+	height: auto;
+	line-height: normal;
+	box-sizing:  border-box;
+	-moz-box-sizing: border-box;
+}
+
+.fusie_modalwindow .main table input:hover, .fusie_modalwindow .main table select:hover {
+	border-color: #aaa;
+	box-shadow: 0 0 5px #ccc;
+}
+
+.fusie_modalwindow .main table input:focus, .fusie_modalwindow .main table select:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 5px #9ecaed;
+}
+
+.fusie_modalwindow .main .social_outer, .fusie_modalwindow .main .subs_outer {
+	text-align: center;
+}
+
+.fusie_modalwindow .main .social_inner, .fusie_modalwindow .main .subs_inner {
+	margin: 0px auto;
+}
+
+.fusie_modalwindow .main .subs_inner {
+	max-width: 500px;
+	text-align: left;
+}
+
+.fusie_modalwindow .main .subs_inner label {
+	display: block;
+	padding-left: 20px;
+	text-indent: -20px;
+	margin: 0px;
+}
+
+.fusie_modalwindow .main .subs_inner input {
+	display: inline-block;
+	width: 20px;
+	padding: 0;
+	margin:0;
+}
+
+.fusie_modalwindow .main .social_inner img:hover, .fusie_modalwindow .bottom button:hover {
+	transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+}
+
+.fusie_modalwindow .main .social_inner span {
+	display: inline-block;
+	margin: 0px 3px 3px 3px;
+}
+
+.fusie_modalwindow .bottom {
+	padding-top: 10px;
+}
+
+.fusie_modalwindow .bottom button {
+	border: none;
+	padding: 7px 30px;
+	background-color: #ccc;
+	margin: 0px 5px;
+}
+
+.fusie_modalwindow .bottom button:first-child {
+	color: #fff;
+	background-color: #ff0f2c;
+}
+
+.fusie_modalwindow .loading {
+	text-align: center;
+	background: none;
+	margin: 0px;
+	padding: 20px 0px;
+	text-indent: 0;
+}
+
+.fusie_modalwindow .mailchange {
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 0.85em;
+}
+
+.fusie_modalwindow #fusie_pwdhelpdiv {
+	overflow: hidden;
+}
+
+.fusie_modalwindow #fusie_pwdhelpdiv .txt {
+	background-color: #ebebeb;
+	border-radius: 5px;
+	padding: 5px;
+	width: 80%;
+	margin: 0px auto;
+	position: relative;
+	color: #696969;
+}
+
+.fusie_modalwindow #fusie_pwdhelpdiv .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-weigth: bold;
+	cursor: pointer;
+}
