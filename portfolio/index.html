@@ -121,7 +121,6 @@
 					</div>
 					<div class="tags">
 						<ul>
-							<li><span class="grey-tag">work in progress</span></li>
 							<li><span class="grey-tag">freelance</span></li>
 							<li>WebGL</li>
 							<li>GLSL</li>
@@ -131,7 +130,7 @@
 						</ul>
 					</div>
 					<div class="info">
-						<p>The Met Office's newly formed <a href="http://www.informaticslab.co.uk/">Informatics Lab</a> is developing a browser-based interactive weather data visualisation tool. The Met's supercomputers generate colossal 3D data fields that cover a volume of atmosphere above the UK. The Aim is to make this data accessible for anyone to view and study. My involvement in the collaboration is to help solve some of the many technical changes involved in rendering animated volumetric data with WebGL.</p>
+						<p>The Met Office's newly formed <a href="http://www.informaticslab.co.uk/">Informatics Lab</a> is developing a browser-based interactive weather data visualisation tool. The Met's supercomputers generate colossal 3D data fields that cover a volume of atmosphere above the UK. The Aim is to make this data accessible for anyone to view and study in the browser. My involvement in the collaboration is to help solve some of the many technical changes involved in rendering animated volumetric data with WebGL.</p>
 
 						<h4>Technical Challenges</h4>
 						<p>Achieving high performance with a ray-marched self-shadowing volume renderer is a significant challenge in itself, especially when targeting mobiles, but compounding that challenge is the requirement for the data to be animated and interactive. An easy technique to speed up rendering performance is to cache the lighting occlusion field for the volume in a texture, this would work well assuming our data and light source remain static, however the data will be changing rapidly as the weather fields are animated. To keep the animation smooth we could precompute the occlusion at startup, but this isn't ideal either - we're expecting about 360 frames of animation, if an occlusion pass takes 16ms per frame, then precomputing lighting costs 5.8 seconds at startup! The next option is to compute lighting on the server and bundle it with the weather data, but will the additional download time introduced be really less than the time computing it on the client?</p>
@@ -139,7 +138,7 @@
 						<p>There's a requirement for the user to be able to fly through the data, this is tough - if the user is getting close to the data, the lighting occlusion resolution will have to be increased to create a convincing effect. Additionally, to reduce bandwidth the weather data is fairly coarse so we'll need to layer noise onto the cloud density field - necessitating client-side lighting computation.</p>
 
 						<h4>Project Status</h4>
-						<p>The Informatics Lab have developed a prototype volume renderer but the performance is far too poor for public release. My challenge as a contracted developer is to try and get it running at fast as possible before it goes live.</p>
+						<p>The Informatics Lab have developed a prototype volume renderer but the performance isn't ideal for public release. My challenge as a contracted developer was to develop techniques to get it running at fast as possible.</p>
 					</div>
 				</div>
 				<style scoped>
