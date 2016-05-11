@@ -34,25 +34,14 @@
 \begin{document}
 
 
-\begin{rSection}{Motivation}
-
+\begin{rSection}{Introduction}
 % Creative Technologist
-\item I have a love of tackling interesting problems, especially when they occur at an intersection between technology, physics and design. My work has been enjoyed by over 1.6 million people and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}. \item I specialize in web development and computer graphics, however, I'm never shy to grapple with a new domain to meet the demands of a project. 
-\item \href{http://github.com/haxiomic}{I'm a keen proponent of open source} and you can find my contributions under the handle `haxiomic'.
+\item Previous clients include LG, Atlantic Productions and the Met Office. My work both personal and contracted has reached millions of users and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}.
 
+\item I specialize in web development and computer graphics, however, I'm never shy to grapple with a new domain to meet the demands of a project.
 
-\end{rSection}
+\item I'm a keen proponent of open source and you can find my contributions under the handle \href{http://github.com/haxiomic}{`haxiomic'}.
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-{\bf University of Sheffield} 
-%\hfill {\em June 2004}
-\\
-B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -61,25 +50,43 @@ B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Alchemy VR}{June 2015}{Java, C++, Android, Mobile}{Contract Work}
-\item \href{http://www.alchemyvr.com/}{Alchemy VR} is a recently formed branch of Atlantic Productions. Their VR premier ``Life on Earth'' (narrated by David Attenborough) was to be shown on 80 Gear VRs in the Natural History Museum from the 12th of June (2015).
+\begin{rSubsection}{Alchemy VR}{Feb 2016 - Present}{VR, C++, three.js, WebGL, GLSL, node.js}{Contracting}
+\item \href{http://www.alchemyvr.com/}{Alchemy VR} are transitioning to distributing their VR films directly to users (rather then through exhibitions), I was contracted to develop the cross-platform Netflix-style video store to enable this.
+\item To provide a cross-platform base (where bundling a webview wasn't an option) I implemented the WebGL API over GLES using the V8 JavaScript engine (C++), this enabled us to reap the benefits of developing for the web (live feedback, easy distribution, easier to hire developers etc), whilst allows access to native code and APIs where necessary.
+\item I was also responsible for developing the media delivery systems, which involved writing a content delivery server in node.js and developing an in-house DRM system.
+\end{rSubsection}
+
+\begin{rSubsection}{Atlantic Productions}{Dec 2015 - Feb 2016}{three.js, WebGL, GLSL, HTML, SCSS}{Contracting}
+\item Contracted to develop interactive features for a companion website to \href{http://www.atlanticproductions.tv/}{Atlantic Productions} recent series ``David Attenbrough's Great Barrier Reef''. Features included a \href{http://attenboroughsreef.com/_mobile/interactive_weather_globe.php}{WebGL globe displaying animated wind flow, atmospheric temperature and ocean current data}
+\end{rSubsection}
+
+\begin{rSubsection}{DinahMoe}{Nov 2015}{WebGL, GLSL, Front-end Web}{Contracting}
+\item Contracted by \href{http://dinahmoe.com/}{DinahMoe} to develop portions of an interactive WebGL film, Canada Goose's ``Out There''. The project included developing a system to render WebGL output to video.
+\end{rSubsection}
+
+\begin{rSubsection}{LG \& Responsive Ads}{Sept 2015}{WebGL, GLSL, Front-end Web}{Contracting}
+\item As part of an \href{http://www.lg.com/uk/oled-tv}{LG OLED TV} ad campaign, I was contracted to produce an interactive WebGL fluid and particle simulation in collaboration with \href{http://www.responsiveads.com/}{responsiveads}.
+\item The ad was required to run smoothly in all modern browsers, including mobiles and underpowered devices. The computationally intensive nature of the simulation required heavy optimization and an adaptive quality system.
+\item Traditionally this sort of simulation requires extensions to WebGL (such as floating point textures), to enable maximum compatibility, techniques were developed to pack simulation data into 4 byte textures which were available in every WebGL instance (whereas extensions are not).
+\item A early preview version of the ad is \href{http://haxiomic.github.io/ig783wghhnod/new-brush/}{available}.
+\end{rSubsection}
+
+\begin{rSubsection}{Met Office}{June 2015}{WebGL, GLSL}{Consulting}
+\item The \href{http://www.informaticslab.co.uk/}{Met Office Informatics Lab} were developing a browser-based 3D visualization of live weather in the UK. I was brought in to consult on techniques for high-performance volumetric rendering and approaches to resolve performance issues their initial WebGL ray marching implementation.
+\end{rSubsection}
+
+\begin{rSubsection}{Alchemy VR}{June 2015, Sept 2015}{Java, C++, Android, Mobile}{Contracting}
+\item \href{http://www.alchemyvr.com/}{Alchemy VR} is a recently formed branch of \href{http://www.atlanticproductions.tv/}{Atlantic Productions}, their VR premier ``David Attenborough's First Life'' was to be shown on 80 Gear VRs in the Natural History Museum from the 12th of June (2015).
 \item Alchemy asked me to solve a number of critical problems two weeks before their premier deadline. I was tasked with developing a custom VR video player and bypassing the built-in Oculus Home without resorting to rooting the devices.
 \item The custom VR video player was developed using C++, Java Native Interface and Oculus's Mobile SDK and the bypass was developed with Java and the Android API.
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{fffunction}{April 2015}{JavaScript, backbone.js, HTML, SCSS}{Contract Work}
+\begin{rSubsection}{fffunction}{Apr 2015}{JavaScript, backbone.js, HTML, SCSS}{Contracting}
 \item \href{http://fffunction.co/}{fffunciton} is a digial design agency in the Southwest with clients that include \href{http://www.roland.co.uk}{Roland UK} and the Bristol museums group (\href{http://bristolmuseums.org.uk}{BMGA}).
 \item I was brought in to contribute to a browser-based book reader and preview app (commissioned by Oxford University Press). The app was developed with backbone.js, node.js and Grunt. 
 \item My role involved developing a page layout engine and viewer thumbnail alongside bug fixes.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{University Hospitals of Leicester}{Sept 2014 - Feb 2015}{JavaScript, backbone.js, HTML, LESS, e-Learning}{Contract Work}
-\item Imran Aslam of University Hospitals of Leicester commissioned the development of a browser-based e-Learning app.
-\item The app (developed with backbone.js) was designed to aid teaching medical students the correct procedures and behaviors when working in a team on a ward.
 \end{rSubsection}
 
 %------------------------------------------------
@@ -101,13 +108,7 @@ B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Open Source Projects}
-
-\begin{rSubsection}{SuperSL}{Mar 2015 - Present}{Haxe, GLSL, JavaScript, C, Context Free Grammars, LALR}{Work in Progress}
-\item \href{https://github.com/haxiomic/supersl}{SuperSL} is a shader programming language built for the web. SuperSL is a superset of GLSL with additional language features designed to resolve some of GLSL shortcomings and improve the process of writing shaders for WebGL.
-\item In order to strike a balance between GLSL's strictness and Javascript's flexibility it introduces features such as compile-time type inference, function inlining and shader modularity.
-\item SuperSL can be used to generate GLSL either at project compile time (like LESS or SASS) or at runtime. To make this possible with a single codebase SuperSL is written in Haxe and compiled to (among others) Javascript, C++ and Java.
-\end{rSubsection}
+\begin{rSection}{Selected Open Source Projects}
 
 \begin{rSubsection}{WebGL Fluid}{September 2014}{GLSL, Haxe, Lime, JavaScript, C++, WebGL}{}
 \item \href{https://github.com/haxiomic/GPU-Fluid-Experiments}{This project} is a GPU fluid and particle simulation written in Haxe and GLSL, targeting HTML5 for browsers and C++ for desktop and iOS. The simulation solves the Navier-Stokes equation for incompressible flow over a grid with the Jacobi method and uses the velocity field to advect over 1 million particles.
@@ -121,7 +122,25 @@ B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 	\item \href{http://www.engadget.com/2015/05/15/GPU-physics-trippy-simulation/}{engadget}
 \end{itemize}
 \end{rSubsection}
+
+\begin{rSubsection}{GLSL Parser in Haxe}{Mar 2015 - Present}{GLSL, Haxe, JavaScript, C, Context Free Grammars, LALR}{Work in Progress}
+\item The aim of this project is to provide a cross-platform GLSL parser (and parser generator) that supports the GLSL reference language grammar.
+\item The motivation for the development was to enable compile-time transformations (such as minification or transpilation) of GLSL source, as well as tighter integration with the host codebase when working in the Haxe.
+\item The project can be access and demoed on github \href{https://github.com/haxiomic/haxe-glsl-parser}{github.com/haxiomic/haxe-glsl-parser}.
+\end{rSubsection}
 	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Sheffield} 
+%\hfill {\em June 2004}
+\\
+B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 \end{rSection}
 
 
@@ -132,7 +151,7 @@ B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & JavaScript, Haxe, GLSL, C, Objective-C, C++, Bash \\
+Programming Languages & JavaScript, GLSL, C++, C, Objective-C, Haxe, Bash \\
 Technologies \& APIs & HMTL5, WebGL, Git \\
 Platforms & Android, iOS, OS X, Linux  \\
 Skills & UI \& UX design, Reverse Engineering \\
