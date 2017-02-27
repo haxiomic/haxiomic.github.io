@@ -28,7 +28,7 @@
 
 
 \name{George Corney} % Your name
-\address{The Cottage, Mutley Park House \\ Plymouth \\ PL3 4SE} % Your address
+\address{Flat 24, Rosewood House \\ London \\ SW8 1TB} % Your address
 \address{07542 045079 \\ haxiomic@gmail.com} % Your phone number and email
 
 \begin{document}
@@ -36,11 +36,11 @@
 
 \begin{rSection}{Introduction}
 % Creative Technologist
-\item Previous clients include LG, Atlantic Productions and the Met Office. My work both personal and contracted has reached millions of users and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}.
+\item Previous clients include Microsoft, LG, Atlantic Productions and the Met Office. My work both personal and contracted has reached millions of users and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}.
 
 \item I specialize in web development and computer graphics, however, I'm never shy to grapple with a new domain to meet the demands of a project.
 
-\item I'm a keen proponent of open source and you can find my contributions under the handle \href{http://github.com/haxiomic}{`haxiomic'}.
+\item I'm a advocate of open source and you can find my contributions under the handle \href{http://github.com/haxiomic}{`haxiomic'}.
 
 \end{rSection}
 
@@ -50,9 +50,15 @@
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Alchemy VR}{Feb 2016 - Present}{VR, C++, three.js, WebGL, GLSL, node.js}{Contracting}
+\begin{rSubsection}{Microsoft}{June 2016 - Present}{WebGL, GLSL, Physically Based Rendering}{Contracting}
+\item As part of a push for the 3D computing future, Microsoft are developing an internal physically based rendering engine (PBR) to be used in Paint3D and other Microsoft products (such as Remix3D).
+\item I was contracted to develop the WebGL version of the engine, which included implementing effects such as self-shadowing, bloom and glossy reflections.
+\item Device compatibility and performance are top priority in this project, so fallback techniques (such as float packing) were used to ensure a high quality PBR experience even on low-end devices.
+\end{rSubsection}
+
+\begin{rSubsection}{Alchemy VR}{Feb 2016 - June 2016}{VR, C++, three.js, WebGL, GLSL, node.js}{Contracting}
 \item \href{http://www.alchemyvr.com/}{Alchemy VR} are transitioning to distributing their VR films directly to users (rather then through exhibitions), I was contracted to develop the cross-platform Netflix-style video store to enable this.
-\item To provide a cross-platform base (where bundling a webview wasn't an option) I implemented the WebGL API over GLES using the V8 JavaScript engine (C++), this enabled us to reap the benefits of developing for the web (live feedback, easy distribution, easier to hire developers etc), whilst allows access to native code and APIs where necessary.
+\item To provide a cross-platform base (where bundling a webview wasn't an option) I implemented the WebGL API over GLES using the V8 JavaScript engine (C++), this enabled us to reap the benefits of developing for the web (live feedback, easy distribution, easier to hire developers etc), whilst allowing access to native code and APIs where necessary.
 \item I was also responsible for developing the media delivery systems, which involved writing a content delivery server in node.js and developing an in-house DRM system.
 \end{rSubsection}
 
@@ -125,8 +131,8 @@
 
 \begin{rSubsection}{GLSL Parser in Haxe}{Mar 2015 - Present}{GLSL, Haxe, JavaScript, C, Context Free Grammars, LALR}{Work in Progress}
 \item The aim of this project is to provide a cross-platform GLSL parser (and parser generator) that supports the GLSL reference language grammar.
-\item The motivation for the development was to enable compile-time transformations (such as minification or transpilation) of GLSL source, as well as tighter integration with the host codebase when working in the Haxe.
-\item The project can be access and demoed on github \href{https://github.com/haxiomic/haxe-glsl-parser}{github.com/haxiomic/haxe-glsl-parser}.
+\item The motivation for the development was to enable compile-time transformations (such as minification or transpilation) of GLSL source, as well as tighter integration with the host codebase when working with the Haxe compiler.
+\item The project can be accessed and tested on github \href{https://github.com/haxiomic/haxe-glsl-parser}{github.com/haxiomic/haxe-glsl-parser}.
 \end{rSubsection}
 	
 \end{rSection}
