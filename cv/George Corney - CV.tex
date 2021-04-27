@@ -28,7 +28,7 @@
 
 
 \name{George Corney} % Your name
-\address{163 Pinnocks Way \\ Oxford \\ OX2 9DF} % Your address
+\address{2 Millway Close \\ Oxford \\ OX2 8BJ} % Your address
 \address{07542 045079 \\ \href{mailto:haxiomic@gmail.com}{haxiomic@gmail.com}} % Your phone number and email
 
 \begin{document}
@@ -50,15 +50,29 @@
 
 \begin{rSection}{Experience}
 
+\begin{rSubsection}{LUSH – Interactive Installation \& Other Projects}{March 2019 - August 2020}{React, WebGL, GLSL, C++, emscripten, iOS, Android, TypeScript, 3D}{Contracting}
+\item LUSH commissioned an \href{https://twitter.com/Haxiomic/status/1146820050445393921?s=20}{interactive fluid art piece} to be projected on a wall within a new flagship store opening in Shinjuku Japan. In addition, the piece was to be embedded as an experience within in their native mobile app \href{https://apps.apple.com/gb/app/lush-labs/id1439333565}{LUSH Labs} (iOS and android)
+\item The mobile app build mandated small binary sizes and close-to-the-metal performance, the in-store interactive required integrating with native C++ vision SDK and the project schedule necessitated a rapid turnaround time.
+\item I used GLSL to implement optical-flow tracking and the interactive fluid simulation and haxe to build cross-platform native OpenGL views that could be embedded easily within native and web apps with a low-footprint. This approach represents an alternative to heavy game engines like Unity and slower-iteration languages like C++ or Rust. It's an approach I'm trying to pioneer and develop \href{https://github.com/haxiomic/haxe-c-bridge}{open source projects} to make it easier.
+\item Other projects involved compiling FFmpeg to WebAssembly so WebGL$\rightarrow$MP4 video encoding could be performed in-browser, React for building UIs to host WebGL experiences and Babylon.js for PBR rendering.
+\end{rSubsection}	
+
+\begin{rSubsection}{VALIS - Genomics Startup}{December 2017 - March 2019}{React, WebGL, GLSL, Text Rendering, TypeScript}{Contracting}
+\item Developing a WebGL-based genomics data viewer, capable of navigating through gigabytes of data in realtime. Traditional genomics data is often heavy to load and slow navigate, this project involved developing a pipeline to enable streaming and rendering genomics data so it can be explored interactively within a web browser.
+\item To achieve best performance, a \href{https://github.com/VALIS-software/Engine}{WebGL UI, animation} and \href{https://github.com/VALIS-software/GPUText}{text rendering system} was developed from the ground up.
+\item The VALIS viewer is now in-use at the \href{https://www.encodeproject.org/}{ENCODE project} to preview genomics data in the browser.
+\end{rSubsection}
+
 \begin{rSubsection}{Microsoft}{June 2016 - August 2017}{WebGL, GLSL, Physically Based Rendering, C++}{Contracting}
 \item Working on Microsoft's internal cross-platform physically-based rendering engine used in products including Office, Windows 10 shell and Paint3D.
 \item I developed the PBR pipeline for the WebGL version of the engine and much of my work on the WebGL engine is now available in \href{https://www.babylonjs.com/demos/pbrglossy/}{BablyonJS}.
 \item During this time also I worked on optimizing rendering and launch performance in MS Paint's successor, Paint3D.
 \end{rSubsection}
 
-\begin{rSubsection}{Alchemy VR}{Feb 2016 - June 2016}{VR, C++, three.js, WebGL, GLSL, node.js}{Contracting}
-\item \href{http://www.alchemyvr.com/}{Alchemy VR} are transitioning to distributing their VR films directly to users (rather then through exhibitions), I was contracted to develop the cross-platform Netflix-style video store to enable this.
+\begin{rSubsection}{Alchemy VR}{Feb 2016 - June 2016}{VR, WebVR, C++, three.js, WebGL, GLSL, node.js}{Contracting}
+\item \href{http://www.alchemyvr.com/}{Alchemy VR} are transitioning to distributing their VR films directly to users (rather then through exhibitions), I was contracted to develop the cross-platform Netflix-style VR video player and VR storefront to enable this.
 \item To provide a cross-platform base (where bundling a webview wasn't an option) I implemented the WebGL API over GLES using the V8 JavaScript engine (C++), this enabled us to reap the benefits of developing for the web (live feedback, easy distribution, easier to hire developers etc), whilst allowing access to native code and APIs where necessary.
+\item WebVR was in the early experimental phase but much of the specification had been outlined. I used the early specification as a roadmap for implementing the native VR app, so that transitioning to in-browser WebVR would be a relatively painless process
 \item I was also responsible for developing the media delivery systems, which involved writing a content delivery server in node.js and developing an in-house DRM system.
 \end{rSubsection}
 
@@ -157,7 +171,7 @@ B.Sc in Physics with Astrophysics $\diamond{}$ \textit{First Class}
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & JavaScript, GLSL, C++, C, Objective-C, Haxe, Bash \\
+Programming Languages & JavaScript, GLSL, C++, C, Objective-C, Haxe \\
 Technologies \& APIs & HMTL5, WebGL, Git \\
 Platforms & Android, iOS, OS X, Linux  \\
 Skills & UI \& UX design, Reverse Engineering \\
