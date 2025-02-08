@@ -28,17 +28,18 @@
 
 
 \name{George Corney} % Your name
-\address{2 Millway Close \\ Oxford \\ OX2 8BJ} % Your address
-\address{07542 045079 \\ \href{mailto:haxiomic@gmail.com}{haxiomic@gmail.com}} % Your phone number and email
+\address{28 Ganna Park Road \\ Plymouth \\ PL3 4NN} % Your address
+\address{07542 045079 \\ \href{mailto:george@superfluid.co}{george@superfluid.co}} % Your phone number and email
 
 \begin{document}
 
 
 \begin{rSection}{Introduction}
 % Creative Technologist
-\item Previous clients include Microsoft, LG, Atlantic Productions and the Met Office. My work both personal and contracted has reached millions of users and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}.
+\item Creative technologist, comfortable working across multiple domains from native development, through rendering engineering, realtime networking to design and interactive art.
+\item Founding engineer at \href{https://lumalabs.ai/dream-machine}{lumalabs.ai}. Previous clients include Microsoft, Nike, LG, LUSH, Atlantic Productions and the Met Office. My work both personal and contracted has reached millions of users and featured on sites like \href{http://thenextweb.com/creativity/2015/05/15/webgl-fluid-experiment-is-a-browser-based-lsd-trip/}{The Next Web}, \href{http://www.gizmodo.co.uk/2014/11/just-try-and-stop-playing-with-this-fluid-simulator/}{Gizmodo} and \href{http://www.fastcodesign.com/3038725/this-wonderful-web-toy-turns-your-browser-into-magic-liquid}{FastCoDesign}.
 
-\item I specialize in web development and computer graphics, however, I'm never shy to grapple with a new domain to meet the demands of a project.
+\item I focus on GPU rendering and web technologies, however, I'm never shy to grapple with a new domain to meet the demands of a project. 
 
 \item I'm an advocate of open source and you can find my contributions under the handle \href{http://github.com/haxiomic}{`haxiomic'}.
 
@@ -48,14 +49,31 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Selected Experience}
+
+\begin{rSubsection}{Refik Anadol – dataland.art}{September 2024 - Present}{WebGL, GLSL, three.js, Next.js, React, TypeScript}{Contracting}
+\item Developed an \href{https://x.com/refikanadol/status/1869051351130382519}{interactive particle artwork} as the centerpiece for their ``Large Nature Model", an AI system that generates visions of nature. The artwork visually represents the AI's hyperdimensional parameters.
+\item As the AI generates new images, the particle system dynamically morphs into 3D representations of nature, creating a seamless connection between the model's output and the visual experience.
+\end{rSubsection}
+
+
+
+\begin{rSubsection}{lumalabs.ai}{Nov 2022 - September 2024}{WebGL, GLSL, C++, WebAssembly, three.js, Next.js, React, TypeScript}{FTE}
+\item Founding engineer at \href{https://lumalabs.ai}{lumalabs.ai}. Developed the web editor for their neural radiance field rendering tool, featured in a \href{https://www.youtube.com/watch?v=YX5AoaWrowY}{Corridor Crew video}.
+\item Worked on rendering engineering for the web-based real-time Gaussian splat renderer. Including developing \href{https://www.npmjs.com/package/@lumaai/luma-web}{three.js integration}.
+\item Developed interactive artworks \& contributions to product release websites.
+\end{rSubsection}
+
+\begin{rSubsection}{Nike Rise – Interactive Flagship Store}{May 2021 - July 2021}{WebGL, GLSL, JavaScript}{Contracting}
+\item Working with Nike \& \href{https://field.io/work/nike-rise-intelligent-retail-system}{field.io} to develop an \href{https://field.io/work/nike-rise-intelligent-retail-system}{interactive store experience} driven by live data and customer interaction. Alongside developing data-driven live artworks throughout the store I worked on the \href{https://hypebeast.com/2021/8/nike-rise-seoul-retail-concept-store-info}{reactive entrance archway} – an doorway of LED displays. As customers walk through the visuals react to their motion. I implemented the piece including developing the computer vision algorithms to extract motion from video.
+\end{rSubsection}
 
 \begin{rSubsection}{LUSH – Interactive Installation \& Other Projects}{March 2019 - August 2020}{React, WebGL, GLSL, C++, emscripten, iOS, Android, TypeScript, 3D}{Contracting}
 \item LUSH commissioned an \href{https://twitter.com/Haxiomic/status/1146820050445393921?s=20}{interactive fluid art piece} to be projected on a wall within a new flagship store opening in Shinjuku Japan. In addition, the piece was to be embedded as an experience within in their native mobile app \href{https://apps.apple.com/gb/app/lush-labs/id1439333565}{LUSH Labs} (iOS and android)
 \item The mobile app build mandated small binary sizes and close-to-the-metal performance, the in-store interactive required integrating with native C++ vision SDK and the project schedule necessitated a rapid turnaround time.
 \item I used GLSL to implement optical-flow tracking and the interactive fluid simulation and haxe to build cross-platform native OpenGL views that could be embedded easily within native and web apps with a low-footprint. This approach represents an alternative to heavy game engines like Unity and slower-iteration languages like C++ or Rust. It's an approach I'm trying to pioneer and develop \href{https://github.com/haxiomic/haxe-c-bridge}{open source projects} to make it easier.
 \item Other projects involved compiling FFmpeg to WebAssembly so WebGL$\rightarrow$MP4 video encoding could be performed in-browser, React for building UIs to host WebGL experiences and Babylon.js for PBR rendering.
-\end{rSubsection}	
+\end{rSubsection}
 
 \begin{rSubsection}{VALIS - Genomics Startup}{December 2017 - March 2019}{React, WebGL, GLSL, Text Rendering, TypeScript}{Contracting}
 \item Developing a WebGL-based genomics data viewer, capable of navigating through gigabytes of data in realtime. Traditional genomics data is often heavy to load and slow navigate, this project involved developing a pipeline to enable streaming and rendering genomics data so it can be explored interactively within a web browser.
@@ -95,7 +113,7 @@
 \item The \href{http://www.informaticslab.co.uk/}{Met Office Informatics Lab} were developing a browser-based 3D visualization of live weather in the UK. I was brought in to consult on techniques for high-performance volumetric rendering and approaches to resolve performance issues their initial WebGL ray marching implementation.
 \end{rSubsection}
 
-\begin{rSubsection}{Alchemy VR}{June 2015, Sept 2015}{Java, C++, Android, Mobile}{Contracting}
+\begin{rSubsection}{Alchemy VR}{June 2015 - Sept 2015}{Java, C++, Android, Mobile}{Contracting}
 \item \href{http://www.alchemyvr.com/}{Alchemy VR} is a recently formed branch of \href{http://www.atlanticproductions.tv/}{Atlantic Productions}, their VR premier ``David Attenborough's First Life'' was to be shown on 80 Gear VRs in the Natural History Museum from the 12th of June (2015).
 \item Alchemy asked me to solve a number of critical problems two weeks before their premier deadline. I was tasked with developing a custom VR video player and bypassing the built-in Oculus Home without resorting to rooting the devices.
 \item The custom VR video player was developed using C++, Java Native Interface and Oculus's Mobile SDK and the bypass was developed with Java and the Android API.
